@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  app:
+    image: instrument-price-tracking
+    ports:
+      - "8181:8181"
+    environment:
+      - partner.service.host=ws://host.docker.internal:8080
